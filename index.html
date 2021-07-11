@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="onInit()">
+    <h1>Todos</h1>
+    
+    <select onchange="onSetFilter(this.value)">
+        <option value="all">All Todos</option>
+        <option value="active">Active</option>
+        <option value="done">Done</option>
+    </select>
+
+    <select onchange="onSetSort(this.value)">
+        <option value="time">Created</option>
+        <option value="txt">Text</option>
+        <option value="priority">Priority</option>
+    </select>
+    <h2 class= "empty-list" style = "visibility: hidden;"></h2>
+    <ul class="todo-list"></ul>
+    <div class="add-todo">
+        <input type="text" class="todo-txt" placeholder="What needs to be done" />
+        <select class = "todo-priority">
+            <option value="" disabled selected hidden>Priority</option>
+            <option value="1">High</option>
+            <option value="2">Medium</option>
+            <option value="3">Low</option>
+        </select>
+        <button class = "add-todo-button" onclick="onAddTodo()">Add</button>
+    </div>
+
+    <div class="todo-stat">
+        Total Todos:
+        <span class="total-count"></span>
+        Active:
+        <span class="active-count"></span>
+
+    </div>
+
+    <script src="js/util-service.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/todo-service.js"></script>
+    <script src="js/todo-controller.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+body {
+    background-color: lightskyblue;
+    text-align: center;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+ul{
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-txt {
+    padding: 10px 20px;
+}
+
+.todo-txt:focus {
+    background-color: lightsalmon;
+    transition: 0.3s;
+}
+
+.todo-stat {
+    background-color: darkcyan;
+    padding: 20px;
+    margin: 10px;
+}
+
+.add-todo{
+height: 5.2vh;
+}
+
+.todo-priority{
+    width: 100px;
+    height: inherit;
+}
+.add-todo-button{
+    transition: 0.8s;
+}
+.add-todo-button:hover{
+    color: white;
+    background-color:indigo;
+    transition: 1s;
+}
+
