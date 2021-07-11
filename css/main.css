@@ -13,6 +13,10 @@ ul{
     flex-direction: column;
 }
 
+li{
+    padding: 10px;
+}
+
 .todo-txt {
     padding: 10px 20px;
 }
