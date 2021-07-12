@@ -82,6 +82,7 @@ function sortByName(users){
 
 function sortByLastLogin(users){
     return users.sort(function (a,b){
+    
         return b.lastLoginTime - a.lastLoginTime
     })
 }
