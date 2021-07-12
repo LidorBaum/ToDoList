@@ -67,10 +67,10 @@ function loadAdmin() {
     var strTableHeadHTML = "<tr>"
     keysArray.forEach(key => {
             if(key === "userName" || key === "lastLoginTime"){
-                strTableHeadHTML += `<th class="head sort" onclick="onSortBy('${key}')" > ${key} </th>`
+                strTableHeadHTML += `<th class="head sort" onmousedown="onSortBy('${key}')" > ${key} </th>`
             }
             else{
-            strTableHeadHTML += `<th class="head" onclick="" > ${key} </th>`
+            strTableHeadHTML += `<th class="head" onmousedown="" > ${key} </th>`
             }
     })
     strTableHeadHTML += "</tr>"
