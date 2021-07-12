@@ -1,6 +1,4 @@
 'use strict'
-// var currFilter
-
 function onInit() {
     console.log('Init');
     if (loadFromStorage('Users') === null) {
