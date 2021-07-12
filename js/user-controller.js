@@ -24,7 +24,6 @@ function onLoginTry() {
     if (!loggedUser) {
         elUserName.value = null
         elPassword.value = null
-        console.log("NOT LOGGED IN")    //TODELETE
         elInvalid.classList.remove("hide-item")
     }
     else {
