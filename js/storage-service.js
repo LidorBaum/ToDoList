@@ -9,3 +9,7 @@ function loadFromStorage(key) {
     var val = JSON.parse(str)
     return val;
 }
+
+function removeFromStorage(key){
+    localStorage.removeItem(key)
+}

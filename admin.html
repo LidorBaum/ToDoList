@@ -8,16 +8,20 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body onload="onInit()">
-    <div class="login">
-        <h1>Safe-Content, Please Login First</h1>
-          <form>
-            <input type="text" class="username" name="u" placeholder="Username" required="required" />
-              <input type="password" class="password" name="p" placeholder="Password" required="required" />
-              <button type="button" class="btn btn-primary btn-block btn-large" onclick="onLoginTry()" >Let me in.</button>
-            </form>
-           <h2 class = "invalid hide-item">Invalid Loggin</h2> 
-      </div>
+<body onload="loadAdmin()">
+    <form action="index.html">
+            <input class="back btn btn-primary btn-block btn-large" type="submit" value="Back" />
+        </form>    
+    <div class="table hide-item">
+        <table>
+            <thead class= 'table-head'>
+
+            </thead>
+            <tbody class='table-body'>
+
+            </tbody>
+        </table>
+    </div>
     <div class="content-div hide-item">
         <h1 style="color: white;">Welcome back, <span class= "welcome"></span></h1>
         <form action="admin.html">
